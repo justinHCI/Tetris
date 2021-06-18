@@ -1,0 +1,85 @@
+`<div class='demographics'>
+    <h1>Post-trial Questionnaire</h1>
+    <div class='form'>
+        <label for='age'>Age: </label>
+        <input type='number' id='age' name='age' min='18' max='100' required>
+    </div>
+	<br>
+    <div class='form'>
+        <label for='gender'>Gender: </label>
+        <select id='gender' name='gender_drop' required>
+            <option disabled selected value> -- select an option -- </option>
+            <option>Prefer not to say</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Non-binary</option>
+        </select>
+    </div>
+	<br>
+    <div class='form'>
+        <label for='education'>What is the highest level of education completed? </label>
+        <select id='education' name='education_drop' required>
+            <option disabled selected value> -- select an option -- </option>
+            <option>Prefer not to say</option>
+            <option>Secondary or High School</option>
+            <option>Vocational Qualification</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's or Higher</option>
+        </select>
+    </div>
+	<br>
+	<div class='form'>
+        <label for='tetris'>What is your level of experience with Tetris? </label>
+        <select id='tetris' name='tetris_drop' required>
+            <option disabled selected value> -- select an option -- </option>
+            <option>I am not at all familiar with Tetris.</option>
+            <option>I know how Tetris is played, but I have not played Tetris before.</option>
+            <option>I have played Tetris before, but I don't play regularly. </option>
+            <option>I regularly play Tetris.</option>
+        </select>
+    </div>
+
+	 <br>
+	
+	 <div class='form' >
+        <label for='stratLowTime'> For non-urgent trials, how did you decide when to deliver messages your partner? </label>
+	
+		<textarea id="stratLowTime" name= "stratLowTimeName" cols="100" rows="5" required></textarea></div>
+		  <br>
+	
+	
+	 <div class='form' >
+        <label for='stratLowHow'> For non-urgent trials, how did you decide what to say to your partner? </label>
+		<textarea id="stratLowHow" name="stratLowHowName" cols="100" rows="5" required></textarea></div>
+		  <br><br>
+		 
+	<div class='form' >
+        <label for='straHighTime'> For urgent trials, how did you decide when to deliver messages your partner? </label>
+		<textarea id="stratHighTime" name="stratHighTimeName" cols="100" rows="5" required></textarea></div>
+		  <br><br>
+	
+	
+	 <div class='form' >
+        <label for='stratHighHow'> For urgent trials, how did you decide what to say to your partner?</label>
+		<textarea id="stratHighHow"  name="stratHighHowName" cols="100" rows="5" required> </textarea></div>
+		  <br>
+	
+	 <div class='form' >
+        <label for='other'>Do you have any other comments about your experience today? </label>
+		<textarea id="other"  name="otherName" cols="100" rows="5" required> </textarea></div>
+		  <br>
+	
+		 
+		 
+		 <div class='form'>
+        <label for='partnerID'>I thought my partner I played the game with today was: </label>
+        <select id='partnerID' name='partnerDrop' required>
+            <option disabled selected value> -- select an option -- </option>
+            <option>A person playing live</option>
+			<option>A recording of a person</option>
+            <option>A computer</option>
+            <option>Not sure</option>
+        </select>
+    </div>
+
+</div>

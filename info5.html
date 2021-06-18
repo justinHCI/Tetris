@@ -1,0 +1,66 @@
+<head>
+	<style>
+	div.id{
+		width: 800px;
+		margin: auto
+	}
+	
+
+</style>	
+	</head>
+
+<div id=info5 class = "id">
+
+<h1 style="text-align:center">Searching for your partner</h1>
+
+
+
+
+
+<p style="text-align:center">Thank you once again for agreeing to take part in research.</p>
+	<br><br>
+
+<p style="text-align:center" id="please"><b>Please wait to be matched with a Tetris volunteer. This may take a few minutes. When you are matched with a partner, the button below will say Continue.</b></p>
+
+<div id="wheel">
+<img style="display: block; margin: 0 auto;" src="200.gif" alt="" height="" width="">
+	
+	</div>
+
+
+
+<button style="display: block; margin: 0 auto;" type="button" id="continue" disabled >Searching for your partner</button>
+<br><br>
+	
+<script>
+// Enable button after some delay
+var flag = false	
+function changebutton(id) {
+	$("#wheel").remove();
+	document.getElementById(id).disabled=false;
+	document.getElementById(id).innerHTML = "Continue";
+	};
+	
+var sec = (Math.random()*10) + 10;
+	
+	
+function countdown () {
+	var flag = true
+	if (sec < 1) {
+		changebutton("continue");
+	}
+	else {
+	sec -=1;
+	console.log(sec)
+	window.setTimeout(countdown, 1000);
+	}
+}
+
+
+
+
+window.onload = countdown;
+if (flag==false)
+	countdown()
+
+</script>
